@@ -1,0 +1,192 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap'); */
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+
+main {
+    margin-top: 3rem;
+    position: absolute;
+    height: 80vh;
+    display: flex;
+    
+    
+}
+
+ul {
+    list-style: none;
+    overflow: auto;
+}
+
+mark {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.column1 ul {
+    display: flex;
+    min-height: auto;
+}
+
+.column1 ul li {
+    
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+
+.bigSize {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.3rem;
+    display: flex;
+    min-height: auto;
+    overflow: hidden;
+    
+}
+
+#scheduleLine {
+    text-transform: uppercase;
+}
+
+#scheduleWord {
+    background-color: #F65D5C;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+footer {
+    margin-top: 90vh;
+}
+
+.attribution {
+    text-align: center;
+}
+
+
+
+
+
+/* Smartphone */
+@media only screen and (max-width: 500px){
+        main {
+            flex-direction: column-reverse;
+            margin-top: 23rem;
+        }
+
+        p {
+            padding-top: 5rem;
+            font-size: 1.5rem;
+        }
+
+        #nav-bar {
+            padding-top: 2rem;
+            width: 185%;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 3rem;
+        }
+        #menu {
+            width: 2rem;
+            
+          
+            
+        }
+
+        #nav-bar ul {
+            display: none;
+        }
+        
+        .column1 {
+            padding-top: 5rem;
+            padding-left: 3rem;
+           
+        }
+
+        .column1 ul {
+            justify-content: space-evenly;
+            font-size: 2rem;
+            
+        }
+
+        
+        .bigSize {
+            padding-top: 2rem;
+        }
+
+        
+        .attribution {
+            margin-top: 120vh;
+            text-align: center;
+            width: 200vw;
+            font-size: 18px;
+        }
+         
+}
+
+@media only screen and (min-width: 501px){
+    #container {
+        position: relative;
+        margin:  5rem;
+        
+    }
+    .item {
+        flex: 0 0 65%;
+    }
+
+    #nav-bar {
+        padding-left: 10rem;
+       display: flex;
+       align-items: baseline;
+       justify-content: space-between;
+    }
+
+    #nav-bar ul{
+        display: flex;
+        margin-right: 15rem;
+        
+    }
+
+    #nav-bar ul li {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .column1 {
+        padding-left: 10rem;
+    }
+
+    .column1 ul {
+        line-height: 3rem;
+    }
+
+    #project {
+        padding-top: 1.5rem;
+    }
+    #scheduleLine {
+        line-height: 10rem;
+        
+    }
+
+}
